@@ -1,5 +1,6 @@
 import GameObject from "./GameObject.js"
 
+//Objekten som rör på sig
 export default class Game {
   constructor(width, height) {
     this.width = width
