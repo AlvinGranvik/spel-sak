@@ -1,29 +1,28 @@
-import GameObject from "./GameObject.js"
+import Ball from "./Ball"
+import GameObject from "./GameObject"
+import Input from "./Input"
+import Player from "./Player"
 
-//Objekten som rör på sig
-export default class Game {
-  constructor(width, height) {
+export default class Game { // skapar klassen
+  constructor(width, height) { // klassens constructor
     this.width = width
     this.height = height
-    this.gameObjects = [
-      new GameObject(this, 0, 100, 20, 20, '#f00', 100),
-      new GameObject(this, 0, 200, 20, 20, '#0f0', 200),
-      new GameObject(this, 0, 300, 20, 20, '#00f', 300)
-    ]
+    this.input = new Input(this)
+    this.player = new Player(0, 0, 50, 50, "green", this)
+    console.log("Ny instans av game ", this.width)
+    this.box = new GameObject(40, 100, 200, 200, "purple")
+    this.ball = new Ball(100, 200, 100, 100, "red")
   }
 
-  
-
-  //Uppdaterar objekten så att de kan röra på sig
   update(deltaTime) {
-    this.gameObjects.forEach(gameObject => {
-      gameObject.update(deltaTime)
-    })
+    this.box.update(deltaTime)
+    this.ball.update(deltaTime)
+    this.player.update(deltaTime)
   }
 
   draw(ctx) {
-    this.gameObjects.forEach(gameObject => {
-      gameObject.draw(ctx)
-    })
+    this.box.draw(ctx)
+    this.ball.draw(ctx)
+    this.player.draw(ctx)
   }
-}
+ }
