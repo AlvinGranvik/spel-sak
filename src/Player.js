@@ -23,6 +23,7 @@ export default class Player extends GameObject {
     this.maxSpeedX = 0.2
     this.maxSpeedY = 5
     this.color = "255, 0, 0"
+    this.maxX = 50
   }
 
   update(deltaTime) {
@@ -32,6 +33,7 @@ export default class Player extends GameObject {
       } else {
         this.speedX -= this.maxSpeedX
       }
+
     }
     if (this.game.input.keys.has("ArrowRight")) {
       if (this.speedX > 10) {
@@ -56,15 +58,19 @@ export default class Player extends GameObject {
 
     //Denna del behövs inte längre egentligen då att hoppa aldrig kommer att användas i spelet som jag gör, men jag behåller funktionen utifall det ändras.
     console.log(this.y)
-    if (this.y > 320) {
+    /*if (this.y > 320) {
       this.speedY = 0
     } else if (this.y < 320) {
       this.speedY += 5
     }
     if (this.game.input.keys.has("ArrowUp")) {
       this.speedY -= this.maxSpeedY
-    } this.y += this.speedY
+    } this.y += this.speedY*/
+    this.y = 320 //Sätter höjden till 320 så att man är vid den punkten alltid oavsett vad.
     this.x += this.speedX
+    if (this.x >= this.maxX) {
+      this.speedX = 0
+    }
     
   }
 

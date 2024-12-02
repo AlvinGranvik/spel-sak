@@ -3,8 +3,8 @@ import GameObject from "./GameObject"
 import Input from "./Input"
 import Player from "./Player"
 
-export default class Game { // skapar klassen
-  constructor(width, height) { // klassens constructor
+export default class Game {
+  constructor(width, height) {
     this.width = width
     this.height = height
     this.input = new Input(this)
@@ -26,3 +26,4 @@ export default class Game { // skapar klassen
     this.player.draw(ctx)
   }
  }
+

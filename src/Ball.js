@@ -11,4 +11,5 @@ export default class Ball extends GameObject {
     ctx.fillStyle = this.color
     ctx.fill()
   }
-} 
+}
+
