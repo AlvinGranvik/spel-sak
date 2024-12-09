@@ -23,7 +23,9 @@ export default class Player extends GameObject {
     this.maxSpeedX = 0.2
     this.maxSpeedY = 5
     this.color = "255, 0, 0"
-    this.maxX = 50
+    //Inivis walls
+    this.maxX = 600
+    this.minX = 200
   }
 
   update(deltaTime) {
@@ -68,13 +70,15 @@ export default class Player extends GameObject {
     } this.y += this.speedY*/
     this.y = 320 //Sätter höjden till 320 så att man är vid den punkten alltid oavsett vad.
     this.x += this.speedX
-    if (this.x >= this.maxX) {
-      this.speedX = 0
+    if (this.x > this.maxX) {
+      this.x = this.maxX
     }
     
-  }
+    if (this.x < this.minX) {
+      this.x = this.minX
+    }
 
-  
+  }
 
   draw(ctx) {
     if (this.flip) {

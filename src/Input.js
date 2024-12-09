@@ -12,9 +12,9 @@ export default class Input {
       this.keys.delete(event.key)
     })
 
-    // Läser av var musen är på skärmen och loggar det i konsolen, utkommenterat för tillfället för att inte clogga konsolen
-    // window.addEventListener("mousemove", (event) => {
-    //   console.log(event.offsetX, event.offsetY)
-    // })
+    /* Läser av var musen är på skärmen och loggar det i konsolen, utkommenterat för tillfället för att inte clogga konsolen
+     window.addEventListener("mousemove", (event) => {
+       console.log(event.offsetX, event.offsetY)
+     })*/
   }
 }

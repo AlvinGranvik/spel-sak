@@ -16,3 +16,11 @@ Spelet skapat kommer vara ett rhythm spel med ett wave / tower defense upplägg,
 ## LEKTION 3
 - Implementering av ett område där man kan röra på sig (collision boxes / invis walls)
 - Fixade lite problem orsakade av borttagningen av hopp funktionen
+
+## LEKTION 4
+- Collision boxes finslipning
+- Påbörjat arbete på ett runda system (tog bort fiender)
+
+## LEKTION 5
+- Fixat spawn ställen för fiender samt gjort om fiendernas utseende en del för att kunna enkelt debugga
+- Påbörjat arbete på fiendernas pathfinding
