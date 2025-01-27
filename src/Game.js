@@ -8,10 +8,10 @@ export default class Game {
     this.width = width
     this.height = height
     this.input = new Input(this)
-    this.player = new Player(400, 0, 50, 50, "green", this);
+    this.player = new Player(400, 0, 170, 240, "green", this);
     console.log("Ny instans av game ", this.width);
-    this.box = new GameObject(0, 320, 50, 50, "purple");
-    this.box2 = new GameObject(800, 320, 50, 50, "red");
+    this.box = new GameObject(0, 420, 50, 50, "purple");
+    this.box2 = new GameObject(800, 420, 50, 50, "red");
   }
 
   update(deltaTime) {

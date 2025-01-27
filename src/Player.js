@@ -6,14 +6,16 @@ export default class Player extends GameObject {
     this.game = game
 
     this.image = new Image()
-    this.image.src = "./src/assets/PlaceholderSheet.png"
+    this.image.src = "./src/assets/Sprites/Player_SpriteSheet_NoGrid.png"
 
-    this.frameWidth = 100
-    this.frameHeight = 95
+    this.x = 0
+    this.y = 0
+    this.frameWidth = 340
+    this.frameHeight = 480
     this.frameX = 0
     this.frameY = 0
     this.flip = false
-    this.maxFrames = 7
+    this.maxFrames = 10
     this.fps = 20
     this.timer = 0
     this.interval = 1000 / this.fps
@@ -24,7 +26,7 @@ export default class Player extends GameObject {
     this.maxSpeedY = 5
     this.color = "255, 0, 0"
     //Inivis walls
-    this.maxX = 600
+    this.maxX = 650
     this.minX = 200
   }
 
@@ -57,23 +59,27 @@ export default class Player extends GameObject {
       this.speedX = 0
     }
 
-
-    //Denna del behövs inte längre egentligen då att hoppa aldrig kommer att användas i spelet som jag gör, men jag behåller funktionen utifall det ändras.
-    console.log(this.y)
-    /*if (this.y > 320) {
-      this.speedY = 0
-    } else if (this.y < 320) {
-      this.speedY += 5
+    //Animations för idle
+    if (this.timer > this.interval) {
+      this.frameX++
+      this.timer = 0
+    } else {
+      this.timer += deltaTime
     }
-    if (this.game.input.keys.has("ArrowUp")) {
-      this.speedY -= this.maxSpeedY
-    } this.y += this.speedY*/
-    this.y = 320 //Sätter höjden till 320 så att man är vid den punkten alltid oavsett vad.
+
+    if (this.frameX >= this.maxFrames) {
+      this.frameX = 0
+    }
+
+
+
+    console.log(this.y)
+    this.y = 300 //Sätter höjden till 320 så att man är vid den punkten alltid oavsett vad.
     this.x += this.speedX
     if (this.x > this.maxX) {
       this.x = this.maxX
     }
-    
+
     if (this.x < this.minX) {
       this.x = this.minX
     }
@@ -87,7 +93,7 @@ export default class Player extends GameObject {
     }
     ctx.drawImage(
       this.image,
-      this.frameX * this.frameWidth,
+      590 + this.frameX * this.frameWidth,
       this.frameY * this.frameHeight,
       this.frameWidth,
       this.frameHeight,
