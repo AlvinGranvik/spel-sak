@@ -30,3 +30,7 @@ Spelet skapat kommer vara ett rhythm spel med ett wave / tower defense upplägg,
 
 ## LEKTION 7
 - Påbörjad implementering av inputs när fiender kommer till spelaren
+
+## OSÄKER PÅ VILKEN LEKTION DET ÄR NU 2025-02-10
+- Sprites för spelaren fungerar nu
+- Bakgrund är nästan fullkomligt implementerad

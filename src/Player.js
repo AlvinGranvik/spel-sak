@@ -1,4 +1,5 @@
 import GameObject from "./GameObject"
+import playerImage from "./assets/Sprites/Player_SpriteSheet_NoGrid.png"
 
 export default class Player extends GameObject {
   constructor(x, y, width, height, color, game) {
@@ -6,7 +7,7 @@ export default class Player extends GameObject {
     this.game = game
 
     this.image = new Image()
-    this.image.src = "./src/assets/Sprites/Player_SpriteSheet_NoGrid.png"
+    this.image.src = playerImage
 
     this.x = 0
     this.y = 0

@@ -16,7 +16,7 @@
 canvas {
   border: 4px solid #646cff;
   max-width: 100%;
-  background-image:url("src/assets/Background/BG.png"), url("src/assets/Background/MG_FG.png");
+  background-image:url("src/assets/Background/BG.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
