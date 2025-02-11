@@ -98,7 +98,7 @@ export default class Player extends GameObject {
       this.frameY * this.frameHeight,
       this.frameWidth,
       this.frameHeight,
-      this.flip ? this.x * -1 - this.width : this.x,
+      this.flip ? this.x * -1 - this.width : this.x, //Deletes diddy
       this.y,
       this.width,
       this.height,
