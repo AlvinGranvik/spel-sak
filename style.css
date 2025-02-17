@@ -16,12 +16,6 @@
 canvas {
   border: 4px solid #646cff;
   max-width: 100%;
-  background-image:url("src/assets/Background/BG.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: 67%;
-  background-blend-mode: overlay;
 }
 
 

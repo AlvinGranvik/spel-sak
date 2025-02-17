@@ -75,7 +75,7 @@ export default class Player extends GameObject {
 
 
     console.log(this.y)
-    this.y = 300 //Sätter höjden till 320 så att man är vid den punkten alltid oavsett vad.
+    this.y = 300 //Sätter höjden till 300 så att man är vid den punkten alltid oavsett vad.
     this.x += this.speedX
     if (this.x > this.maxX) {
       this.x = this.maxX

@@ -3,6 +3,7 @@ import GameObject from "./GameObject"
 import Input from "./Input"
 import Player from "./Player"
 import Door from "./Door"
+import Back from "./Background"
 
 export default class Game {
   constructor(width, height) {
@@ -13,7 +14,8 @@ export default class Game {
     console.log("Ny instans av game ", this.width);
     this.box = new GameObject(0, 420, 50, 50, "purple");
     this.box2 = new GameObject(800, 420, 50, 50, "red");
-    this.door = new Door();
+    this.door = new Door(0, 0, 1024.8, 576, "blue", this);
+    this.back = new Back(0, 0, 1024.8, 576, "yellow", this);
     this.timer = 0
     this.spawnTimer = 1000
   }
@@ -32,6 +34,7 @@ export default class Game {
   }
 
   draw(ctx) {
+    this.back.draw(ctx)
     this.box.draw(ctx)
     this.box2.draw(ctx)
     this.door.draw(ctx)

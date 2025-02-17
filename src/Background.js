@@ -1,12 +1,12 @@
+import backImg from "./assets/Background/BG.png"
 import GameObject from "./GameObject"
-import doorImg from "./assets/Background/MG_FG.png"
 
 export default class Door extends GameObject {
     constructor(x, y, width, height, color, game) {
       super(x, y, width, height, color);
       this.game = game;
       this.image = new Image();
-      this.image.src = doorImg
+      this.image.src = backImg;
     }
   
     draw(ctx) {

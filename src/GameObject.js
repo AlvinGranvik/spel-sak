@@ -1,5 +1,12 @@
+import nisse from "./assets/Sprites/Nisse_SpriteSheet_NoGrid.png"
+
 export default class GameObject {
   constructor(x, y, width, height, color, game) {
+    super(x, y, width, height, color)
+    
+    this.image = new Image()
+    this.image.src = nisse
+    
     this.width = width
     this.height = height
     this.x = x
