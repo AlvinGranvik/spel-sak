@@ -28,3 +28,7 @@ Spelet skapat kommer vara ett rhythm spel med ett wave / tower defense upplägg,
 ## OSÄKER PÅ VILKEN LEKTION DET ÄR NU 2025-02-10
 - Sprites för spelaren fungerar nu
 - Bakgrund är nästan fullkomligt implementerad
+
+## SISTA LEKTIONEN
+- Fullkomligt fixat bakgrunden
+- Sprites för allting fungerar
