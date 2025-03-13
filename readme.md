@@ -25,12 +25,6 @@ Spelet skapat kommer vara ett rhythm spel med ett wave / tower defense upplägg,
 - Fixat spawn ställen för fiender samt gjort om fiendernas utseende en del för att kunna enkelt debugga
 - Påbörjat arbete på fiendernas pathfinding
 
-## LEKTION 6
-- Gjorde så att fiender rör sig mot spelarens position
-
-## LEKTION 7
-- Påbörjad implementering av inputs när fiender kommer till spelaren
-
 ## OSÄKER PÅ VILKEN LEKTION DET ÄR NU 2025-02-10
 - Sprites för spelaren fungerar nu
 - Bakgrund är nästan fullkomligt implementerad
