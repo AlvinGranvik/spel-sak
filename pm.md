@@ -1,4 +1,6 @@
 # DeadMoves PM
+![Background Code](./src/assets/DeadMoves.png)
+
 
 ## Inledning
 
@@ -25,8 +27,8 @@ Movement i helhet skapades i huvudsak av Jens, våran lärare, men jag justerade
 **Sprites och bakgrund**  
 Alla sprites i spelet laddas in genom spritesheets, det vill säga en väldigt stor bild som har alla individuella sprites på sig. Spritesheets fungerar genom att javascript helt enkelt "scrollar" från sprite till sprite i spritesheeten tills den har nått slutet av ett set av sprites. Då den gjort det, så börjar den antingen om, påbörjar ett nytt sett, eller någonting helt annorlunda beroende på koden. I mitt fall så loopade alla sprites igenom samma set hela tiden, eftersom att jag inte hann få något mer fungera innan projektets slut.
 
-Bakgrunden var något som var lite svårare att göra, då den är uppdelad in i två bilder, en förgrund och en bakgrund. För att få effekten av att nissarna går igenom dörren för att komma in i rummet så behöver allting ritas av javascript i en specifik ordning för att få det fungera, samt så behövde jag skriva separata kod filer för både för- och bakgrunden.
-
+Bakgrunden var något som var lite svårare att göra, då den är uppdelad in i två bilder, en förgrund och en bakgrund. För att få effekten av att nissarna går igenom dörren för att komma in i rummet så behöver allting ritas av javascript i en specifik ordning för att få det fungera, samt så behövde jag skriva separata kod filer för både för- och bakgrunden.  
+![Background Code](./src/assets/DeadMoves_kod.png)
 ## Positiva erfarenheter
 Jag skulle säga att i helhet förstår jag mig bättre på hur javascript, html och css kan användas i samband för att skapa spel på hemsidor, samt lite generell javascript syntax, då jag inte egentligen är särskilt bekant med det språket fortfarande.
 
