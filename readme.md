@@ -31,4 +31,7 @@ Spelet skapat kommer vara ett rhythm spel med ett wave / tower defense upplägg,
 
 ## SISTA LEKTIONEN
 - Fullkomligt fixat bakgrunden
-- Sprites för allting fungerar
+- Sprites för allting är på, men nissarna fungerar inte riktigt som tänkt fortfarande
+
+## Hemma arbete
+- Efter mycket fram och tillbaka med arbetet, och väldigt mycket strul så fungerar hostingen
